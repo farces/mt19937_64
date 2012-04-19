@@ -14,6 +14,7 @@ result := x.Generate()
 ```
 
 or, if being used as a rand.Source:
+
 ```go
 x := rand.New(mt19937_64.New())
 ... any rand methods are now available using mt_64 ...
