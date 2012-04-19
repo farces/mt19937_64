@@ -19,12 +19,7 @@ Based on the C Implementation by Makoto Matsumoto and Takuji Nishimura
 @ http://www.math.hiroshima-u.ac.jp/~m-mat/MT/emt.html
 
 ///
-Implements the rand.Source interface so it can be used for any random functions from the math/rand package,
-or can be used directly as:
-x := mt19937_64.New()
-optional: x.Seed(int64)
-result := x.Generate() //an alias of x.Int63()
-///
+Implements the rand.Source interface.
 
 */
 package mt19937_64
