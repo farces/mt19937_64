@@ -62,7 +62,7 @@ func (m *MT19937_64) Int63() int64 {
 	var x uint64
 	mag01 := []uint64{0, MATRIX_A}
 	if m.index >= N {
-		/* Initialize not called Initialize with a default */
+		/* Initialize with a default Seed if Seed() not previously called */
 		if m.index == N+1 {
 			m.Seed(int64(5489))
 		}
