@@ -75,8 +75,7 @@ func (m *MT19937_64) Int63() int64 {
 		m.index = 0
 
 	}
-	m.index++
-	x = m.array[m.index]
+	x = m.array[m.index++]
 	x ^= (x >> 29) & 0x5555555555555555
 	x ^= (x << 17) & 0x71D67FFFEDA60000
 	x ^= (x << 37) & 0xFFF7EEE000000000
